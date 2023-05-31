@@ -23,10 +23,10 @@ class MinMaxTransformer(CustomTransformer):
 
 	def fit_transform(self, X: dt.Frame, y: np.array = None):
 		X_pandas = X.to_pandas()
-		X_minmax = (X_pandas - X_pandas.min()) / (X_pandas.max() - X_pandas.min())
-		return X_minmax
+		#X_minmax = (X_pandas - X_pandas.min()) / (X_pandas.max() - X_pandas.min())
+		return X_pandas
 
 	def transform(self, X: dt.Frame):
 		X_pandas = X.to_pandas()
-		X_minmax = (X_pandas - X_pandas.min()) / (X_pandas.max() - X_pandas.min())
-		return X_minmax
+		#X_minmax = (X_pandas - X_pandas.min()) / (X_pandas.max() - X_pandas.min())
+		return X_pandas
