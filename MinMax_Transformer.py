@@ -11,7 +11,7 @@ class MinMaxTransformer(CustomTransformer):
 	_multiclass = True
 	_numeric_output = True
 	_is_reproducible = True
-	_modules_needed_by_name = ["custom_package==1.0.0"]
+	#_modules_needed_by_name = ["custom_package==1.0.0"]
 
 	@staticmethod
 	def do_acceptance_test():
